@@ -31,10 +31,12 @@ if(!(empty($_POST['token']))){
 }
 $sql = mysql_query("SELECT * FROM `rss_alerts` ORDER BY `aid` DESC") or die(mysql_error());
 while($row = mysql_fetch_array( $sql )){
-	echo "<tr><td>".$row['title']."</td><td>".$row['descript']."</td><td>".$row['timestamp']."</td><td>".$row['level']."</td></tr>";
+	echo "<tr><td>".$row['title']."</td><td>".$row['descript']."</td><td>".$row['timestamp']."</td><td>".$row['level']."</td><td><a href='".$host."delete.php?aid=".$row['aid']."'>Delete</a></tr>";
 }
 ?>
-</font></table></center>
+</font></table>
+<?php echo "<a href='".$host."delete.php?aid=all'>Delete All</a>"; ?>
+</center>
 </td></tr></table></td></tr></table>
 <br/><br/><br/>
 <font face="verdana,arial" size=-1>

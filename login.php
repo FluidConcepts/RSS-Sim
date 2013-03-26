@@ -51,12 +51,11 @@ while($row = mysql_fetch_array( $sql )){
 <tr><td><font face="verdana,arial" size=-1>Title:</td><td><input type="text" name="title"></td></tr>
 <tr><td><font face="verdana,arial" size=-1>Description:</td><td><textarea name="descript"></textarea></td></tr>
 <tr><td><font face="verdana,arial" size=-1>Alert Level:</td><td>
-		<select name="level">
-		  <option selected value=0>Low</option>
-		  <option value=1>Medium</option>
-		  <option value=2>High</option>
-		  <option value=3>Life-Threatening</option>
-		</select></td></tr>
+                <select name="level">
+                  <option selected value=0>Emergencies (0)</option>
+                  <option value=1>Weather (1)</option>
+                  <option value=2>News (2)</option>
+                </select></td></tr>
 <tr><td><font face="verdana,arial" size=-1>&nbsp;</td><td><font face="verdana,arial" size=-1><input type="submit" value="Add"></td></tr>
 </table></center>
 </form>

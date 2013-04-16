@@ -55,6 +55,7 @@ while($row = mysql_fetch_array( $sql )){
                   <option selected value=0>Emergencies (0)</option>
                   <option value=1>Weather (1)</option>
                   <option value=2>News (2)</option>
+                  <option value=3>Life Threatening Emergency (3)</option>
                 </select></td></tr>
 <tr><td><font face="verdana,arial" size=-1>&nbsp;</td><td><font face="verdana,arial" size=-1><input type="submit" value="Add"></td></tr>
 </table></center>
